@@ -1,10 +1,20 @@
 let bar = document.querySelector('#bar');
-let sidebar =document.querySelector('#sidebar');
-bar.addEventListener('click',()=>
-{
-    sidebar.classList.toggle('hambarger');
-    // bar.classList.toggle('fa-solid fa-xmark');
-    // bar.setAttribute('class','fa-solid fa-xmark');
-    
+let sidebar =document.querySelector('.sidebar');
+let close =document.querySelector('.close');
 
-});
+
+
+
+if(bar){
+    bar.addEventListener('click',()=>{
+        sidebar.classList.add('active');
+
+    })
+}
+
+
+if(close){
+    close.addEventListener('click',()=>{
+        sidebar.classList.remove('active');
+    })
+}

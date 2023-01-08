@@ -9,9 +9,32 @@
 body{
     overflow-x: hidden;
 }
+nav i{
+    color: #50577A;
+}
+nav h1{
+    color: gold;
+}
+nav i:hover{
+    color: #E5B8F4;
+}
+li input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #50577A;
+    color: #50577A;
+    width: 100px;
+}
+li input:hover{
+    color: #E5B8F4;
+}
 a{
     text-decoration: none;
-    color: #000000;
+    color: #50577A;
+}
+a:hover{
+    color: #E5B8F4;
 }
 li{
     list-style: none;
@@ -92,26 +115,55 @@ header{
   background-color:transparent;
   z-index: -1;
 }
-.hambarger{
-    top: 0px;
-    position:fixed;
+.sidebar{
+    
+   position: fixed;
+   top: 0;
+   left: -300px;
+   height: 100vh;
+   width: 300px;
+   padding: 10px 0 0 10px;
+   transition: 0.3s ease-in;
+   z-index: 7;
+   background-color: #A0C3D2;
+  
+
+    
+}
+.sidebar a,p{
+  
+    color: #EAE0DA;
+}
+
+.sidebar a:hover{
+    color: #F7F5EB;
+}
+
+.sidebar p:hover{
+    color: #F7F5EB;
+}
+#wraper{
+    margin-top: 80px;
+}
+.close{
+position: relative;
+cursor: pointer;
+}
+#yh{
+    position: absolute;
+    left: -10px;
+    top: 2px;
+    font-size: 24px;
+}
+.active{
     left: 0;
-    display: flex;
-    height: 100%;
-    width: 350px;
-    z-index: 9995;  
-    justify-content: space-between;
-    flex-direction: column;
-    position:fixed;
-    display: none; 
-    background-color: rgb(58, 102, 102);
-    
 }
-#sidebar{
-    transition: 0.3s ease-in;
-    padding-left: 60px;
+
+/* #sidebar{
+   
     
-}
+    
+} */
 .containts{
     height: 100hv;
     width: 100%;
@@ -649,5 +701,102 @@ margin-top: 10px;
     background-color:transparent;
     z-index: 1;
 }
+.imgs{
+    overflow: hidden;
+    transition: initial;
+    transition-duration: 3s;
+}
 
+.imgs:hover img{
+    transform: scale(1.1);
+}
 
+/* kidss------------------- */
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    background-image: url("Assets/products/kids/main1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0vmax;
+}
+
+.containt-k1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/products/kids/main2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0vmax;
+    position: relative;
+}
+#over-k1{
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color:transparent;
+    z-index: 1;
+}
+.containt-k2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/products/kids/main4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0vmax;
+    position: relative;
+}
+#over-k2{
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color:transparent;
+    z-index: 1;
+}
+.containt-k3{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/products/kids/main0.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0vmax;
+    position: relative;
+}
+#over-k3{
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color:transparent;
+    z-index: 1;
+}
+.containt-k4{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/products/kids/main3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0vmax;
+    position: relative;
+}
+#over-k4{
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color:transparent;
+    z-index: 1;
+}
